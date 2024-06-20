@@ -1,42 +1,87 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* src/styles.css */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.homepage,
+.employee-page {
+  width: 45%;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #f5f5f5;
+  padding: 20px;
   text-align: center;
+  border-bottom: 1px solid #ccc;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.search-bar {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.employee-list {
+  padding: 10px;
 }
 
-.card {
-  padding: 2em;
+.employee-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.employee-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.employee-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.employee-info p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.employee-details {
+  padding: 20px;
+}
+
+.employee-details .employee-avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.employee-details .employee-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.employee-details .employee-info p {
+  margin: 10px 0;
 }
